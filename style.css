@@ -768,6 +768,7 @@ nav {
     justify-content: center;
     width: 100px;
     height: 100px;
+    overflow:hidden;
     border-radius: 50%;
     background: var(--card);
     border: 1px solid var(--border);
