@@ -1480,6 +1480,42 @@ footer span {
 .footer-links a:hover {
     color: var(--accent);
 }
+/* ═══════════════════════════════════════════
+   BACK TO TOP
+═══════════════════════════════════════════ */
+#btt {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+#btt:hover {
+    background: var(--bright);
+    transform: translateY(-2px);
+}
+
+#btt:focus-visible {
+    outline: 2px solid var(--accent2);
+    outline-offset: 3px;
+}
+
+#btt.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 /* ═══════════════════════════════════════════
    ANIMATIONS
